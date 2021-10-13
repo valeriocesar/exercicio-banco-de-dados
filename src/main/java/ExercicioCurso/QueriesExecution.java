@@ -24,8 +24,8 @@ public class QueriesExecution {
 
         // ----- Inserção ----- //
         Curso cursoParaInsercao = new Curso(
-                "Desenvolvimento básico em Java",
-                6,
+                "Introducao a orientacao a objetos com Java",
+                2,
                 "22/09/2021"
         );
 
@@ -42,8 +42,8 @@ public class QueriesExecution {
         // ----- Atualizar ----- //
         Curso cursoParaAtualizar = cursoDAO.getById(10);
         cursoParaAtualizar.setNome("Desenvolvimento basico em Java");
-        cursoParaAtualizar.setDuracao_horas(6);
-        cursoParaAtualizar.setData_conclusao("22/09/2021");
+        cursoParaAtualizar.setDuracaoHoras(6);
+        cursoParaAtualizar.setDataConclusao("22/09/2021");
 
         //cursoDAO.update(cursoParaAtualizar);
         //cursoDAO.list().stream().forEach(System.out::println);

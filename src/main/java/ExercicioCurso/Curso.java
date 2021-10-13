@@ -5,20 +5,20 @@ public class Curso {
 
     private int id;
     private String nome;
-    private int duracao_horas;
-    private String data_conclusao;
+    private int duracaoHoras;
+    private String dataConclusao;
 
-    public Curso(int id, String nome, int duracao_horas, String data_conclusao) {
+    public Curso(int id, String nome, int duracaoHoras, String dataConclusao) {
         this.id = id;
         this.nome = nome;
-        this.duracao_horas = duracao_horas;
-        this.data_conclusao = data_conclusao;
+        this.duracaoHoras = duracaoHoras;
+        this.dataConclusao = dataConclusao;
     }
 
-    public Curso(String nome, int duracao_horas, String data_conclusao) {
+    public Curso(String nome, int duracaoHoras, String dataConclusao) {
         this.nome = nome;
-        this.duracao_horas = duracao_horas;
-        this.data_conclusao = data_conclusao;
+        this.duracaoHoras = duracaoHoras;
+        this.dataConclusao = dataConclusao;
     }
 
     public Curso() {
@@ -40,28 +40,28 @@ public class Curso {
         this.nome = nome;
     }
 
-    public int getDuracao_horas() {
-        return duracao_horas;
+    public int getDuracaoHoras() {
+        return duracaoHoras;
     }
 
-    public void setDuracao_horas(int duracao_horas) {
-        this.duracao_horas = duracao_horas;
+    public void setDuracaoHoras(int duracaoHoras) {
+        this.duracaoHoras = duracaoHoras;
     }
 
-    public String getData_conclusao() {
-        return data_conclusao;
+    public String getDataConclusao() {
+        return dataConclusao;
     }
 
-    public void setData_conclusao(String data_conclusao) {
-        this.data_conclusao = data_conclusao;
+    public void setDataConclusao(String dataConclusao) {
+        this.dataConclusao = dataConclusao;
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
         sb.append("Disciplina: ").append(nome).append('\n');
-        sb.append("Duração da disciplina: ").append(duracao_horas).append(" hora(s)" + '\n');
-        sb.append("Data da conclusão: ").append(data_conclusao).append('\n');
+        sb.append("Duração da disciplina: ").append(duracaoHoras).append(" hora(s)" + '\n');
+        sb.append("Data da conclusão: ").append(dataConclusao).append('\n');
         sb.append("-----");
         return sb.toString();
     }

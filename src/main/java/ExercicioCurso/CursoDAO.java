@@ -70,8 +70,8 @@ public class CursoDAO {
             if (rs.next()) {
                 curso.setId(rs.getInt("id"));
                 curso.setNome(rs.getString("nome"));
-                curso.setDuracao_horas(rs.getInt("duracao_horas"));
-                curso.setData_conclusao(rs.getString("data_conclusao"));
+                curso.setDuracaoHoras(rs.getInt("duracao_horas"));
+                curso.setDataConclusao(rs.getString("data_conclusao"));
             }
 
         } catch (SQLException e) {
@@ -93,8 +93,8 @@ public class CursoDAO {
             String sql = "INSERT INTO curso(nome, duracao_horas, data_conclusao) VALUES(?, ?, ?)";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, curso.getNome());
-            stmt.setInt(2, curso.getDuracao_horas());
-            stmt.setString(3, curso.getData_conclusao());
+            stmt.setInt(2, curso.getDuracaoHoras());
+            stmt.setString(3, curso.getDataConclusao());
 
             // Executa inserção e retorna número de linhas afetadas
             int rowsAffected = stmt.executeUpdate();
@@ -137,8 +137,8 @@ public class CursoDAO {
             String sql = "UPDATE curso SET nome = ?, duracao_horas = ?, data_conclusao = ? WHERE id = ?";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setString(1, curso.getNome());
-            stmt.setInt(2, curso.getDuracao_horas());
-            stmt.setString(3, curso.getData_conclusao());
+            stmt.setInt(2, curso.getDuracaoHoras());
+            stmt.setString(3, curso.getDataConclusao());
             stmt.setInt(4, curso.getId()); // Id é o parâmetro
 
             // Executa update e retorna número de linhas afetadas
