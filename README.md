@@ -27,4 +27,4 @@ Foi incluída também a coluna data_conclusao.
 ## :information_source: Mais sobre isso
 
 - Criado durante meus estudos no bootcamp everis New Talents #2 Java.
-- Agradecimentos ao @danielkv7 pelas aulas.
+- Agradecimentos ao [Daniel Karam](https://github.com/danielkv7) pelas aulas.
