@@ -28,7 +28,3 @@ Foi incluída também a coluna data_conclusao.
 
 - Criado durante meus estudos no bootcamp everis New Talents #2 Java.
 - Agradecimentos ao @danielkv7 pelas aulas.
-
-
-
-[⬆ Voltar ao topo](#Banco de Dados utilizando JDBC e JPA)<br>
